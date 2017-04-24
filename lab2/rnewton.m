@@ -1,7 +1,6 @@
 function [hx, hf] = rnewton(fun, x, tol, m)
 		hx = [];
 		hf = [];
-		global a=27
 [valorf, valorfpri] = fun(x);
 
 		if abs(valorf) < tol
